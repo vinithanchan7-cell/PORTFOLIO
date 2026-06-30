@@ -155,3 +155,164 @@ header nav ul li a {
 .about-text p:last-child {
   margin-bottom: 0;
 }
+#projects {
+  padding: calc(var(--spacing-unit) * 4) 0;
+  background-color: var(--background-color);
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: calc(var(--spacing-unit) * 3);
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(var(--spacing-unit) * 2);
+}
+
+.project-card {
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 8px var(--shadow-color);
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+}
+
+.project-info {
+  padding: calc(var(--spacing-unit) * 1.5);
+}
+
+.project-info h3 {
+  margin-bottom: var(--spacing-unit);
+}
+
+.project-links {
+  padding: 0 calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 1.5);
+  display: flex;
+  gap: var(--spacing-unit);
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  color: var(--surface-color);
+}
+
+.project-links a:last-child {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+#contact {
+  padding: calc(var(--spacing-unit) * 4) 0;
+}
+
+#contact .container > h2,
+#contact .container > p {
+  text-align: center;
+}
+
+#contact .container > p {
+  margin-bottom: calc(var(--spacing-unit) * 3);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#contact label {
+  display: block;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 0.5rem;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  width: 100%;
+  padding: calc(var(--spacing-unit) * 0.75);
+  margin-bottom: calc(var(--spacing-unit) * 1.5);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--surface-color);
+  font-family: inherit;
+  font-size: inherit;
+  color: var(--text-color);
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#contact textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+#contact button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-unit);
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  color: var(--surface-color);
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: filter 0.2s ease-in-out;
+}
+
+#contact button[type="submit"]:hover {
+  filter: brightness(90%);
+}
+footer {
+  background-color: var(--surface-color);
+  padding: calc(var(--spacing-unit) * 2) 0;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-color-light);
+  text-align: center;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+}
+
+footer ul {
+  display: flex;
+  gap: var(--spacing-unit);
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--text-color-light);
+  transition: color 0.2s ease-in-out;
+}
+
+footer ul li a:hover {
+  color: var(--primary-color);
+}
